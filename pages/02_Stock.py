@@ -7,7 +7,7 @@ Date: 2025-01-25
 import config.mysql as mysql
 import streamlit as st
 from datetime import datetime, timedelta
-
+from App import units
 st.set_page_config(page_title="Your Current Stock", page_icon="📦")
 
 conn = mysql.connect()

@@ -10,6 +10,13 @@ import streamlit as st
 from datetime import datetime
 st.set_page_config(page_title="Clearstock Home", page_icon="📦")
 
+# define units
+@st.cache_data
+def load_units():
+    units = ['kg', 'g', 'ml', 'l', 'pcs', 'unit']
+    return units
+units = load_units()
+
 st.title("Welcome to Clearstock")
 st.write("Manage your inventory efficiently with Clearstock.")
 
